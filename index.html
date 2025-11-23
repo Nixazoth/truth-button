@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VibeButton — MVP</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="/mnt/data/d946ca7f-cfd1-4747-adfb-cd7d81c06fe7.png" alt="logo" class="logo">
+    <h1>VibeButton (MVP)</h1>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Créer / Joindre un groupe</h2>
+      <div class="row">
+        <input id="inputGroupName" placeholder="Nom du groupe (ex: Les BG)" />
+        <button id="btnCreateGroup">Créer</button>
+      </div>
+      <div class="row">
+        <input id="inputGroupCode" placeholder="Code du groupe" />
+        <button id="btnJoinGroup">Joindre</button>
+      </div>
+      <p id="groupInfo" class="muted">Aucun groupe sélectionné.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Daily Truth</h2>
+      <div id="questionBox" class="questionBox">Aucune question pour l'instant.</div>
+      <div id="answerControls" class="answerControls hidden">
+        <div class="emojiRow">
+          <button class="emojiBtn">😶‍🌫️</button>
+          <button class="emojiBtn">🔥</button>
+          <button class="emojiBtn">👍</button>
+          <button class="emojiBtn">😂</button>
+          <button class="emojiBtn">😢</button>
+        </div>
+        <div class="row">
+          <input id="inputWord" placeholder="1 mot (optionnel)" maxlength="30" />
+          <button id="btnSendAnswer">Envoyer</button>
+        </div>
+      </div>
+      <div class="row">
+        <button id="btnNewQuestion">Lancer une question (owner only)</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Pulse / Recommandations</h2>
+      <div id="pulseBox">Aucune donnée.</div>
+      <ul id="placesList" class="placesList"></ul>
+      <div class="row">
+        <button id="btnShareCard">Générer Share Card</button>
+      </div>
+    </section>
+
+    <footer class="muted">Prototype MVP — pas pour production. GDPR: anonimiser, modérer, sécuriser avant scale.</footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
