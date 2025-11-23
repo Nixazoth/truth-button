@@ -1,0 +1,22 @@
+:root{
+  --bg:#0b0b0c; --panel:#0f1720; --accent:#00f0d1; --muted:#9aa4ad; --card:#111827;
+  --radius:12px;
+}
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body{margin:0;background:linear-gradient(180deg,#050506,#0b0b0c);color:#fff}
+.topbar{display:flex;align-items:center;gap:12px;padding:16px}
+.logo{height:48px;width:48px;object-fit:contain;border-radius:8px}
+.container{max-width:920px;margin:18px auto;padding:12px}
+.panel{background:var(--panel);padding:14px;border-radius:var(--radius);margin-bottom:12px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+h2{margin:0 0 8px 0}
+.row{display:flex;gap:8px;margin:8px 0}
+input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:#0b1220;color:#fff}
+button{background:var(--accent);color:#001;padding:10px 12px;border-radius:8px;border:0;cursor:pointer}
+.muted{color:var(--muted);font-size:13px}
+.questionBox{padding:12px;background:var(--card);border-radius:8px}
+.answerControls.hidden{display:none}
+.emojiRow{display:flex;gap:8px;margin:8px 0}
+.emojiBtn{font-size:20px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;cursor:pointer}
+.placesList{list-style:none;padding:0;margin:8px 0}
+.placesList li{padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:8px}
+footer{margin-top:12px;text-align:center;color:var(--muted)}
